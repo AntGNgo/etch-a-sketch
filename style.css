@@ -3,7 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	/* box-sizing: border-box; */
+	box-sizing: border-box;
 }
 
 body {
@@ -21,19 +21,22 @@ body {
 	width: 500px;
 	height: 500px;
 	display: flex;
+	flex-direction: column;
 	align-content: flex-start;
-	flex-wrap: wrap;
+	justify-content: flex-start;
 	border: 1px solid #ccc;
 	/* overflow: hidden; */
 }
 
 .pixel {
-	border: 1px solid gray;
+	border: 1px solid #ccc;
+	flex: 1;
 }
 
 .row {
 	width: 100%;
 	display: flex;
+	/* flex: 1; */
 	/* justify-content: space-between; */
 }
 

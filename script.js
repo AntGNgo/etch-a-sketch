@@ -21,8 +21,8 @@ const createRow = (count) => {
 	for (let i = 0; i < count; i++) {
 		const pixel = document.createElement('div');
 		pixel.classList.add('pixel');
-		pixel.style.width = `${Math.floor(container.clientWidth / count)}px`;
-		pixel.style.height = `${Math.floor(container.clientWidth / count)}px`;
+		pixel.style.width = `${container.clientWidth / count}px`;
+		pixel.style.height = `${container.clientHeight / count}px`;
 
 		pixel.addEventListener('mouseover', () => {
 			pixel.style.backgroundColor = '#ccc';
