@@ -10,9 +10,15 @@
 
 <body>
     <h1>Etch-a-Sketch</h1>
-    <div class="container">
-
+    <div id="board-controls">
+        <div id="size">
+            <label for="size-input">Board Size: </label>
+            <input type="range" name="size" id="size-input" min="2" max="100" step="2">
+            <p id="board-size">16</p>
+        </div>
+        <button id="new-board">New Board</button>
     </div>
+    <div id="container"></div>
     <script src="script.js"></script>
 </body>
 
