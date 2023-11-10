@@ -32,10 +32,25 @@ body {
 	display: flex;
 }
 
+#board-controls {
+	display: flex;
+	flex-direction: column;
+	align-items: self-start;
+	gap: 20px;
+}
+
 #board-controls #size {
 	display: flex;
 	gap: 20px;
 	margin-top: 20px;
+}
+
+#color-input {
+	margin-top: 40px;
+}
+
+#color-input p {
+	margin-bottom: 5px;
 }
 
 #new-board {

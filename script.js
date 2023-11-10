@@ -27,7 +27,7 @@ const createRow = (count) => {
 		pixel.style.height = `${container.clientHeight / count}px`;
 
 		pixel.addEventListener('mouseover', () => {
-			pixel.style.backgroundColor = '#ccc';
+			pixel.style.backgroundColor = colorPicker.value;
 		});
 
 		row.appendChild(pixel);
