@@ -3,6 +3,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	/* box-sizing: border-box; */
 }
 
 body {
@@ -17,21 +18,23 @@ body {
 #container {
 	margin: 0 auto;
 	margin-top: 40px;
-	/* border: 1px solid #ccc; */
 	width: 500px;
 	height: 500px;
 	display: flex;
+	align-content: flex-start;
 	flex-wrap: wrap;
+	border: 1px solid #ccc;
+	/* overflow: hidden; */
 }
 
 .pixel {
-	flex: 1;
 	border: 1px solid gray;
 }
 
 .row {
 	width: 100%;
 	display: flex;
+	/* justify-content: space-between; */
 }
 
 #board-controls #size {
