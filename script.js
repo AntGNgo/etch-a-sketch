@@ -2,8 +2,10 @@ const container = document.getElementById('container');
 const sizeInput = document.getElementById('size-input');
 const boardSizeLabel = document.getElementById('board-size-label');
 const newBoardBtn = document.getElementById('new-board');
+const colorPicker = document.getElementById('color-picker');
 
 sizeInput.value = 16;
+colorPicker.value = '#cccccc';
 
 sizeInput.addEventListener('input', (e) => {
 	boardSizeLabel.textContent = `${e.target.value} x ${e.target.value}`;
